@@ -1,0 +1,74 @@
+
+// Font Size Generation
+
+@each $name, $value in $font-size-function {
+  .#{$prefix}font-size-#{$name} {
+    font-size: $value!important;
+  }
+}
+
+@each $size, $break-point in $grid-breakpoints {
+  @media screen and (min-width: #{$break-point}) {
+    @each $name, $value in $font-size-responsive-function {
+      .#{$prefix}font-size-#{$size}-#{$name} {
+        font-size: $value!important;
+      }
+    }
+  }
+}
+
+
+//
+//// Overflow Generator
+//
+//$overflow-state: (hidden, visible, auto);
+//$overflow: ("-x": $overflow-state, "-y": $overflow-state, "": $overflow-state
+//);
+//
+//@each $state-second-name, $state-values in $overflow {
+//  @each $value in $state-values {
+//    .#{$prefix}overflow-#{$value}#{$state-second-name} {
+//      overflow#{$state-second-name}: $value !important;
+//    }
+//  }
+//}
+
+// Background Generator
+
+@each $name, $value in $background-color {
+  .#{$prefix}bg-#{$name} {
+    background-color: $value !important;
+  }
+}
+
+// Font color Generator
+
+@each $name, $value in $font-color {
+  .#{$prefix}font-color-#{$name} {
+    color: $value;
+  }
+}
+
+// Border Radius Generator
+
+.#{$prefix}circle {
+  border-radius: 50%;
+}
+
+@each $name, $value in $border-radius {
+  .#{$prefix}border-radius-#{$name} {
+    border-radius: $value;
+  }
+}
+
+// Flex Align/Justify Generator
+
+//Font Line Height Generator
+
+@each $name, $value in $font-line-height {
+  .#{$prefix}line-height-#{$name} {
+    line-height: $value!important;;
+  }
+}
+// Flex Grow/Shrink Generator
+

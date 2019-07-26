@@ -1,0 +1,35 @@
+
+$font-path: 'assets/fonts/';
+$font-base-name: '1';
+
+@font-face {
+  font-family: FiraGO-Italic;
+  src: url($font-path +'4.ttf');
+}
+
+//@font-face {
+//  font-family: FiraGO-Italic;
+//  src: url($font-path +'1.ttf');
+//}
+
+
+.font {
+  &-Bold {
+    color: #000 !important;
+    font-family: FiraGO-Italic;
+  }
+
+  &-fix {
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    -moz-font-feature-settings: 'case';
+    -webkit-font-feature-settings: 'case';
+    font-feature-settings: 'case' on;
+    -webkit-font-feature-settings: 'case';
+    font-feature-settings: 'case' on;
+  }
+}
+

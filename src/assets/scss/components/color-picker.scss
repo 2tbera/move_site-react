@@ -1,0 +1,22 @@
+.color-picker {
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  &-button{
+    z-index: 110;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto!important;
+  }
+  &-item {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+  }
+}

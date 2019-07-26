@@ -1,0 +1,13 @@
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  &-item {
+    transition: $transition-base;
+    padding: 12px 50px;
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+  }
+}

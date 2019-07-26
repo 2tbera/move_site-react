@@ -1,0 +1,63 @@
+:root {
+  --background-primary: #ad3410;
+}
+
+
+
+$prefix: '';
+$nt-transition-base: .2s linear;
+
+$fixed-padding: 15px;
+
+
+// Grid-breakpoints
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 540px,
+        md: 720px,
+        lg: 960px
+);
+
+// Font-size
+
+$font-size-function: (
+        11: 11px,
+        22: 22px,
+        50: 50px,
+);
+
+// Font-size Responsive
+
+$font-size-responsive-function: (
+        11: 11px,
+);
+
+
+//Font Line Height
+
+$font-line-height: (
+        24: 24px,
+);
+
+// Background Color
+
+$background-color: (
+        dark-green: #019592,
+
+);
+
+// Font Color
+
+$font-color: (
+        white: white,
+        light-grey: #b4b4b4,
+
+);
+
+// Border Radius
+
+$border-radius: (
+
+);
+

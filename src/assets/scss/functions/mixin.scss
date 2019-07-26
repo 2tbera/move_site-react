@@ -1,0 +1,10 @@
+@mixin flex($jc: flex-start, $aic: flex-start, $fw: nowrap) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $aic;
+  flex-wrap: $fw;
+}
+
+@mixin transition($transition) {
+  transition: $transition;
+}
