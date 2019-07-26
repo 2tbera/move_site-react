@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87e8ecf7-640e-4c51-9f89-8e698e245ab0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/components/seeker.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/player/controls/button/button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/player/controls/seeker/seeker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/scss/components/model.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/scss/components/model.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project/components/player/controls/play-pouse-btn/play-pouse-btn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project/components/player/controls/seeker/seeker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/components/player/controls/seeker/seeker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project/components/player/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/components/player/player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project/components/player/socket-handler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/player-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/player-handler.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/project/components/player/player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+            <state relative-caret-position="34">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="e#157#202#0" expanded="true" />
@@ -41,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/src/project/components/player/controls/seeker/seeker.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -80,7 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>loaders</find>
       <find>cssTra</find>
       <find>assets/</find>
       <find>NODE_ENV</find>
@@ -109,6 +101,8 @@
       <find>PlayPauseBtn</find>
       <find>playerStatus</find>
       <find>socket</find>
+      <find>player</find>
+      <find>getSnapshotBeforeUpdate</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -342,7 +336,7 @@
       <workItem from="1563866658889" duration="8277000" />
       <workItem from="1563879311114" duration="11797000" />
       <workItem from="1563972271245" duration="7031000" />
-      <workItem from="1564123203289" duration="15692000" />
+      <workItem from="1564123203289" duration="17182000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1563191939245</created>
@@ -365,11 +359,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564138742119</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first commit">
+      <created>1564143335565</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564143335565</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73349000" />
+    <option name="totallyTimeSpent" value="74839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -754,14 +755,14 @@
     <entry file="file://$PROJECT_DIR$/src/project/components/player/controls/seeker/seeker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/project/components/player/player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        <state relative-caret-position="34">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
             <element signature="e#157#202#0" expanded="true" />
