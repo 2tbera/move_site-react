@@ -1,11 +1,28 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import PlayPauseBtn from './controls/play-pouse-btn/play-pouse-btn'
-import SocketHandler from './socket-handler';
 
+// ACTIONS
+import {playerStatus} from "../../../store/actions";
+
+// COMPONENTS
+import Button from './controls/button/button';
+import Seeker from './controls/seeker/seeker';
+
+// SOCKET
+import io from "socket.io-client";
+
+let socket = io.connect("https://socket-io-connection.herokuapp.com");
+
+// VARIABLES
 let player;
 
 class Player extends Component {
+
+    componentDidMount() {
+        socket.on('navigate', (text) => {
+            this.props.onPlay(this.props.playerStatus === 'play' ? 'pause' : 'play')
+        });
+    }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         this.playserStateHandler();
@@ -13,12 +30,24 @@ class Player extends Component {
 
     render() {
         return (
-            <div className='w-75 h-100vh d-flex justify-content-center align-items-center '>
-                <PlayPauseBtn/>
-                <SocketHandler/>
-                <video className='w-75' ref={ref => player = ref} controls
-                       src="http://imge-ssd-02-l03.imovies.cc/video/imovie_hash_code/13/2019072517020395_high_geo.mp4?md5=qr1g1Rlszl1zKPZhODYAig&expires=1564211833&data=YTozOntzOjc6InVzZXJfaXAiO3M6MTI6IjMxLjE0Ni4yLjE3MCI7czoxMDoidXNlcl9hZ2VudCI7czoxMTU6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS83NS4wLjM3NzAuMTQyIFNhZmFyaS81MzcuMzYiO3M6NzoicmVmZXJlciI7czo1OToiaHR0cHM6Ly93d3cuaW1vdmllcy5jYy9rYS9tb3ZpZXMvNDUwMTQ3MzAzL0Fzc2Fzc2luJ3MtQ3JlZWQiO30="/>
-            </div>
+            <React.Fragment>
+
+                <div className='w-100'>
+                    {/*<Button title={this.props.playerStatus === 'play' ? 'pause' : 'play'} clicked={() => {*/}
+                    {/*this.props.onPlay(this.props.playerStatus === 'play' ? 'pause' : 'play')*/}
+                    {/*}}/>*/}
+                    {/*<Seeker max={player.duration} model={player.currentTime }/>*/}
+
+
+                </div>
+                <div className='w-100 h-100vh d-flex justify-content-center align-items-center '>
+
+                    <video
+
+                        className='w-75' ref={ref => player = ref} controls
+                        src="http://imge-ssd-02-l03.imovies.cc/video/imovie_hash_code/13/2019072517020395_high_geo.mp4?md5=qr1g1Rlszl1zKPZhODYAig&expires=1564211833&data=YTozOntzOjc6InVzZXJfaXAiO3M6MTI6IjMxLjE0Ni4yLjE3MCI7czoxMDoidXNlcl9hZ2VudCI7czoxMTU6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS83NS4wLjM3NzAuMTQyIFNhZmFyaS81MzcuMzYiO3M6NzoicmVmZXJlciI7czo1OToiaHR0cHM6Ly93d3cuaW1vdmllcy5jYy9rYS9tb3ZpZXMvNDUwMTQ3MzAzL0Fzc2Fzc2luJ3MtQ3JlZWQiO30="/>
+                </div>
+            </React.Fragment>
         );
     }
 
@@ -34,11 +63,16 @@ class Player extends Component {
 
 }
 
+
 const mapStateToProps = store => {
     return {
         playerStatus: store.player.playerStatus
     }
 };
 
-
-export default connect(mapStateToProps)(Player);
+const mapDispatchToProps = dispatch => {
+    return {
+        onPlay: (status) => dispatch(playerStatus(status)),
+    }
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Player);

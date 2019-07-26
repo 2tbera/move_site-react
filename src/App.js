@@ -13,7 +13,7 @@ function App() {
     return (
         <div className='container-fluid'>
             <div className="row">
-                <SideBar></SideBar>
+                {/*<SideBar></SideBar>*/}
                 <ColorPicker></ColorPicker>
                 <Player></Player>
                 {/*<Switch>*/}

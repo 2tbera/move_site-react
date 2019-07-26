@@ -1,0 +1,10 @@
+.seeker {
+  background-color: red;
+  width: 100%;
+  height: 10px;
+  &-inner {
+    width: 0%;
+    background: aqua;
+    height: 100%;
+  }
+}
