@@ -2,78 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87e8ecf7-640e-4c51-9f89-8e698e245ab0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/pnpTs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/1.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/2.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/3.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/4.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/animation.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/base/class.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/base/icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/base/model.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/components/color-picker.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/components/list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/components/model.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/functions/functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/functions/mixin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/functions/model.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/model.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/scss/variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/http-handlers/axios-1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/UI/Backdrop/Backdrop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/UI/Backdrop/Backdrop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/UI/Button/Button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/UI/Button/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/UI/Input/Input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/UI/Input/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/UI/Modal/Modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/UI/Modal/Modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/UI/Spinner/Spinner.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/UI/Spinner/Spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/auth/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/color-picker/color-picker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/logo/logo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/navigation/side-bar/side-bar-item/side-bar-item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/navigation/side-bar/side-bar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/player/controls/play-pouse-btn/play-pouse-btn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/components/player/player.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/containers/landing-page/landing-page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/containers/move-detail-page/move-detail-page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/hoc/Auxc/Auxc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/hoc/Layout/Layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/hoc/Layout/Layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/hoc/withErrorHandler/withErrorHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/auth-hanlder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/color-handler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/player-handler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/auth-hanlder.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/color-handler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/player-handler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/utility.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/project/components/player/socket-handler.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project/components/player/controls/play-pouse-btn/play-pouse-btn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/components/player/controls/play-pouse-btn/play-pouse-btn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project/components/player/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/components/player/player.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -86,77 +18,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/project/components/player/player.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/project/components/player/controls/play-pouse-btn/play-pouse-btn.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="6" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/actions/actionTypes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/actions/player-handler.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/reducers/player-handler.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/reducers/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-              <folding>
-                <element signature="e#1#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/actions/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -187,8 +56,8 @@
       <find>border</find>
       <find>Link</find>
       <find>http://54.38.157.48:8000/stream1.mp3</find>
-      <find>header</find>
       <find>initialState</find>
+      <find>header</find>
       <find>add_ingredients</find>
     </findStrings>
     <replaceStrings>
@@ -244,12 +113,13 @@
         <option value="$PROJECT_DIR$/src/store/actions/player-handler.js" />
         <option value="$PROJECT_DIR$/src/store/actions/index.js" />
         <option value="$PROJECT_DIR$/src/project/components/player/player.js" />
+        <option value="$PROJECT_DIR$/src/project/components/player/socket-handler.js" />
         <option value="$PROJECT_DIR$/src/project/components/player/controls/play-pouse-btn/play-pouse-btn.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -297,23 +167,19 @@
               <item name="moves" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="controls" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="moves" type="b2602c69:ProjectViewProjectNode" />
               <item name="moves" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="landing-page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="moves" type="b2602c69:ProjectViewProjectNode" />
-              <item name="moves" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="move-detail-page" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="player" type="462c0819:PsiDirectoryNode" />
+              <item name="controls" type="462c0819:PsiDirectoryNode" />
+              <item name="play-pouse-btn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="moves" type="b2602c69:ProjectViewProjectNode" />
@@ -411,7 +277,7 @@
       <workItem from="1563866658889" duration="8277000" />
       <workItem from="1563879311114" duration="11797000" />
       <workItem from="1563972271245" duration="7031000" />
-      <workItem from="1564123203289" duration="7862000" />
+      <workItem from="1564123203289" duration="11067000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1563191939245</created>
@@ -431,12 +297,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65519000" />
+    <option name="totallyTimeSpent" value="68724000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -450,7 +317,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -465,7 +332,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/assets/sass/scss/model.scss" />
     <entry file="file://$PROJECT_DIR$/src/assets/sass/scss/positions.scss" />
     <entry file="file://$PROJECT_DIR$/src/assets/sass/scss/variables.scss" />
     <entry file="file://$PROJECT_DIR$/src/assets/sass/scss/mixin.scss" />
@@ -750,30 +616,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducers/player-handler.js">
+    <entry file="file://$PROJECT_DIR$/src/store/actions/actionTypes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/player-handler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="e#1#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -784,27 +630,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/actions/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/components/player/player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="323">
+          <caret line="19" column="524" selection-start-line="19" selection-start-column="524" selection-end-line="19" selection-end-column="524" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/components/player/socket-handler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#1#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/reducers/player-handler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/actions/player-handler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/components/player/controls/play-pouse-btn/play-pouse-btn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="6" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
