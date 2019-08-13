@@ -2,7 +2,10 @@
   background-color: red;
   width: 100%;
   height: 10px;
+  cursor: pointer;
+  user-select: none;
   &-inner {
+    //transition: 0.1s linear all;
     width: 0%;
     background: aqua;
     height: 100%;

@@ -11,17 +11,20 @@ import Player from './project/components/player/player';
 
 function App() {
     return (
+
+
         <div className='container-fluid'>
             <div className="row">
-                {/*<SideBar></SideBar>*/}
-                <ColorPicker></ColorPicker>
-                <Player></Player>
-                {/*<Switch>*/}
-                    {/*<Route path="/movies" component={LandingPage}/>*/}
-                    {/*<Route path="/move/:id" exact component={MoveDetailPage}/>*/}
-                    {/*<Route path="/auth" component={Auth}/>*/}
-                    {/*<Route path="/" exact component={LandingPage}/>*/}
-                {/*</Switch>*/}
+                <div className='overlay-line'/>
+                <SideBar></SideBar>
+                {/*<ColorPicker></ColorPicker>*/}
+                {/*<Player></Player>*/}
+                <Switch>
+                    <Route path="/movies" component={LandingPage}/>
+                    <Route path="/tv-shows" exact component={MoveDetailPage}/>
+                    <Route path="/auth" component={Auth}/>
+                    <Route path="/" exact component={LandingPage}/>
+                </Switch>
             </div>
         </div>
     );

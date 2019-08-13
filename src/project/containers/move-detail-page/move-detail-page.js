@@ -5,16 +5,26 @@ import axios from 'axios';
 class MoveDetailPage extends Component {
 
     state = {
-        movie: null
+        aTracks: null
     };
 
+    // API_KEY = CFEFES9JPKBN4T7H
+
+
     componentDidMount() {
-        axios.get('http://devapi.adjaranet.com/api/v1/item/22380')
+        const headers = {
+            "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+            "x-rapidapi-key": "6c486e6840msh24f792e5ee226d3p17e473jsn51960995c05b"
+        }
+
+        axios.get('https://deezerdevs-deezer.p.rapidapi.com/search?&q="eminem"&index=25', {
+            headers: headers
+        })
             .then(e => {
                 console.log(e.data);
                 this.setState({
                     ...this.state,
-                    movie: e.data
+                    aTracks: e.data
                 });
             })
     }
@@ -24,18 +34,23 @@ class MoveDetailPage extends Component {
 
         let move = null;
 
-        if (this.state.movie) {
+        if (this.state.aTracks) {
             move = (
-                <div>{this.state.movie.translations.title}
-                    {this.state.movie.files.video.file}
-                    <video src={this.state.movie.files.video.file}/>
+                <div>
+                    {this.state.aTracks.data.map(alboms =>
+                        (
+                            <div key={alboms.id}>{alboms.title}
+                                <audio src={alboms.preview} controls/>
+
+                            </div>
+                        ))}
                 </div>
             )
         }
 
         return (
             <div className='col-10 p-5 ' style={{background: this.props.color}}>
-                {move}
+                {move}asd
             </div>
         );
     }

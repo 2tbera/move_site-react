@@ -14,6 +14,7 @@ export {
 // PLAYER
 
 export {
-    playerStatus
+    playerStatus,
+    playerCondition
 } from './player-handler';
 

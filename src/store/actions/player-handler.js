@@ -6,4 +6,10 @@ export const playerStatus = (status) => {
         playerStatus: status
     };
 };
+export const playerCondition = (status) => {
+    return {
+        type: actionTypes.PLAYER_CONDITION,
+        playerCondition: status
+    };
+};
 
