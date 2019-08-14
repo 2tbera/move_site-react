@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import axios from 'axios';
+import axios from '../../../http-handlers/axios-music-handler';
 
 class MoveDetailPage extends Component {
 
@@ -12,14 +12,9 @@ class MoveDetailPage extends Component {
 
 
     componentDidMount() {
-        const headers = {
-            "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
-            "x-rapidapi-key": "6c486e6840msh24f792e5ee226d3p17e473jsn51960995c05b"
-        }
 
-        axios.get('https://deezerdevs-deezer.p.rapidapi.com/search?&q="eminem"&index=25', {
-            headers: headers
-        })
+
+        axios.get('"ishome"&index=1')
             .then(e => {
                 console.log(e.data);
                 this.setState({

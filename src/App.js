@@ -5,7 +5,7 @@ import {Route, Switch} from 'react-router';
 import ColorPicker from './project/components/color-picker/color-picker';
 import SideBar from './project/components/navigation/side-bar/side-bar';
 import Auth from './project/components/auth/auth';
-import Player from './project/components/player/player';
+import Player from './project/components/player';
 
 
 
@@ -17,7 +17,7 @@ function App() {
             <div className="row">
                 <div className='overlay-line'/>
                 <SideBar></SideBar>
-                {/*<ColorPicker></ColorPicker>*/}
+                <ColorPicker></ColorPicker>
                 {/*<Player></Player>*/}
                 <Switch>
                     <Route path="/movies" component={LandingPage}/>
