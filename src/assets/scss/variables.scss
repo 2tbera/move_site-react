@@ -2,10 +2,8 @@
   --background-primary: #ad3410;
 }
 
-
-
 $prefix: '';
-$nt-transition-base: .2s linear;
+$transition-base: .2s linear;
 
 $fixed-padding: 15px;
 
@@ -22,15 +20,12 @@ $grid-breakpoints: (
 // Font-size
 
 $font-size-function: (
-        11: 11px,
-        22: 22px,
         50: 50px,
 );
 
 // Font-size Responsive
 
 $font-size-responsive-function: (
-        11: 11px,
 );
 
 
@@ -43,15 +38,12 @@ $font-line-height: (
 // Background Color
 
 $background-color: (
-        dark-green: #019592,
-
 );
 
 // Font Color
 
 $font-color: (
         white: white,
-        light-grey: #b4b4b4,
 
 );
 

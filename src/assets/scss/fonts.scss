@@ -4,7 +4,7 @@ $font-base-name: '1';
 
 @font-face {
   font-family: FiraGO-Italic;
-  src: url($font-path +'4.ttf');
+  src: url($font-path +'2.otf');
 }
 
 //@font-face {
@@ -15,7 +15,6 @@ $font-base-name: '1';
 
 .font {
   &-Bold {
-    color: #000 !important;
     font-family: FiraGO-Italic;
   }
 

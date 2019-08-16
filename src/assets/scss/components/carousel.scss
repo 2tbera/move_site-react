@@ -1,0 +1,74 @@
+.c-carousel {
+  animation: ease-out slide-in 0.5s;
+  width: 100%;
+  transition: $transition-base;
+  &-item {
+    width: 25%!important;
+    flex: 0 0 25% !important;
+    filter: blur(3px);
+    transition: $transition-base;
+    &:hover , &.active{
+      filter: blur(0);
+      //width: 35%!important;
+      //flex: 0 0 35% !important;
+      //margin-left: 5%;
+    }
+  }
+  &.mouseDown {
+    transform: scale(0.9) !important;
+    &-item {
+    }
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);}
+}
+
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 7% 100%;
+  stroke-width: 3px;
+  -webkit-animation: stroke-offset 9s infinite linear;
+  animation: stroke-offset 9s infinite linear;
+}
+.text-copy:nth-child(1) {
+  stroke: #360745;
+  stroke-dashoffset: 7%;
+}
+.text-copy:nth-child(2) {
+  stroke: #D61C59;
+  stroke-dashoffset: 14%;
+}
+.text-copy:nth-child(3) {
+  stroke: #E7D84B;
+  stroke-dashoffset: 21%;
+}
+.text-copy:nth-child(4) {
+  stroke: #EFEAC5;
+  stroke-dashoffset: 28%;
+}
+.text-copy:nth-child(5) {
+  stroke: #1B8798;
+  stroke-dashoffset: 35%;
+}
+
+@-webkit-keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+
+@keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}

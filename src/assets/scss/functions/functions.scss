@@ -72,3 +72,115 @@
 }
 // Flex Grow/Shrink Generator
 
+// Width / Height Generator
+
+$starterSize: 0;
+$size: ("w": "width", "h": "height");
+
+@each $name, $value in $size {
+  @for $i from 0 through 4 {
+    .#{$prefix}#{$name}-#{25 * $i} {
+      #{$value}: $starterSize +(25% * $i);
+    }
+  }
+}
+
+// Spacers Generator
+
+$starter: 0.25;
+$spacer: ("m": "margin", "p": "padding");
+
+$spacerDirection: ("l":"-left", "r":"-right", "t":"-top", "b":"-bottom");
+
+$var: true !default;
+$generated-name: auto !default;
+
+@each $name, $value in $spacer {
+  @for $i from 0 through 5 {
+    @if $var == true {
+      $generated-name: 0 auto;
+    } @else {
+      $generated-name: $starter * $i + 0rem;
+    }
+    .#{$prefix}#{$name}-#{$i} {
+      #{$value}: $generated-name!important;
+    }
+
+    @each $direction, $dValue in $spacerDirection {
+      .#{$prefix}#{$name}#{$direction}-#{$i} {
+        #{$value}#{$dValue}: $generated-name!important;;
+      }
+    }
+    $var: false;
+  }
+  $var: true;
+}
+
+@each $size, $break-point in $grid-breakpoints {
+  @media screen and (min-width: #{$break-point}) {
+    $var: true !default;
+    $generated-name: auto !default;
+
+    @each $name, $value in $spacer {
+      @for $i from 0 through 5 {
+        @if $var == true {
+          $generated-name: 0 auto;
+        } @else {
+          $generated-name: $starter * $i + 0rem;
+        }
+        .#{$prefix}#{$name}-#{$size}-#{$i} {
+          #{$value}: $generated-name!important;
+        }
+        @each $direction, $dValue in $spacerDirection {
+          .#{$prefix}#{$name}#{$direction}-#{$size}-#{$i} {
+            #{$value}#{$dValue}: $generated-name!important;
+          }
+        }
+        $var: false;
+      }
+      $var: true;
+    }
+  }
+}
+
+// Display Generator
+
+$display-type: (flex, block, inline, none);
+
+@each $size, $break-point in $grid-breakpoints {
+  @media screen and (min-width: #{$break-point}) {
+    @each $name in $display-type {
+      @if $size == 'xs' {
+        .#{$prefix}d-#{$name} {
+          display: $name !important;
+        }
+      } @else {
+        .#{$prefix}d-#{$size}-#{$name} {
+          display: $name !important;
+        }
+      }
+    }
+  }
+}
+
+// Overflow Generator
+
+$overflow-state: (hidden, visible, auto);
+$overflow: ("-x": $overflow-state, "-y": $overflow-state, "": $overflow-state
+);
+
+@each $state-second-name, $state-values in $overflow {
+  @each $value in $state-values {
+    .#{$prefix}overflow-#{$value}#{$state-second-name} {
+      overflow#{$state-second-name}: $value !important;
+    }
+  }
+}
+
+$text-align-variants: (left, center, right) !default;
+
+@each $value in $text-align-variants {
+  .#{$prefix}text-align-#{$value} {
+    text-align: $value;
+  }
+}

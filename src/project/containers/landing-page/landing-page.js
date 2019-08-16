@@ -1,89 +1,55 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-// import axios from 'axios';
+
+import image_1 from '../../../assets/images/christian-1.jpg';
+import image_2 from '../../../assets/images/ishome-1.jpg';
+import image_3 from '../../../assets/images/paul-2.jpg';
+import image_4 from '../../../assets/images/christian-2.jpg';
+import image_5 from '../../../assets/images/ishome-2.jpg';
+import image_6 from '../../../assets/images/maxresdefault.jpg';
+
+import Carousel from '../../components/carousel/carousel';
 import axios from '../../../http-handlers/axios-music-handler';
 
 
 class LandingPage extends Component {
 
-    state = {};
+    state = {
+        artistList: []
+    };
 
     componentDidMount() {
+        this.setState({
+            ...this.state, artistList: [
+                {id: 1631052, image: image_1 , title : 's',active: true},
+                {id: 384890, image: image_2, title : 's',},
+                {id: 6377, image: image_3, title : 's',},
+                {id: 6376, image: image_4, title : 's',},
+                {id: 6372, image: image_5, title : 's',},
+                {id: 6371, image: image_6, title : 's',}
+            ]
+        });
 
-
-        axios.get('/genre')
-            .then(e => {
-                console.log(e.data.data);
-                this.setState({
-                    ...this.state,
-                    genres: e.data
-                });
-            });
-
-        axios.get('/chart')
-            .then(e => {
-                console.log(e.data);
-                this.setState({
-                    ...this.state,
-                    chart: e.data
-                });
-            });
-
-        // axios.get('https://api.imovies.cc/api/v1/casts/4428/movies?page=1&per_page=12&sort=rand')
-        //     .then(e => {
-        //         this.setState({
-        //             ...this.state,
-        //             moveList: e.data
-        //         });
-        //     })
     }
+
+    artistFetchHandler = (id) => {
+        axios.get('/artist/' + id)
+            .then(e => {
+                this.setState({
+                    ...this.state,
+                    artist: e.data,
+                });
+            });
+    };
 
 
     render() {
-
-        let move = null;
-
-        if (this.state.genres) {
-            move = (
-                <div>
-                    {this.state.genres.data.map(genre =>
-                        (
-                            <div key={genre.id}>{genre.name}
-                                <img src={genre['picture_small']} alt=""/>
-                            </div>
-                        ))}
-                </div>
-            )
-        }
-        //
-        let chart = null;
-
-        if (this.state.chart && this.state.chart.tracks) {
-            chart = (
-                <div>
-                    {this.state.chart.tracks.data.map(genre =>
-                        (
-                            <div key={genre.id}>{genre.title}
-                                <audio src={genre.preview} controls />
-                            </div>
-                        ))}
-                </div>
-            )
-        }
-
-
         return (
-            <div className='col-9 p-5 h-100vh' style={{background: this.props.color}}>
-                <div className="row p-5 h-100 ">
-
-
-                    {move}
-                    {chart}
-                    {/*<canvas width="1536" height="775" style="width: 1920px; height: 969px;"></canvas>*/}
-
-
+            <React.Fragment>
+                <div className="w-100 h-100vh justify-content-center align-items-center">
+                    <Carousel list={this.state.artistList} clicked={(id) => this.artistFetchHandler(id)}/>
                 </div>
-            </div>
+            </React.Fragment>
         );
     }
 }

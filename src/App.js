@@ -17,23 +17,20 @@ let test = 'https://purepng.com/public/uploads/large/91506523298hioflzoyysyr0agj
 function App() {
     return (
 
-
         <div className='container-fluid'>
-            <div className="row">
-                {/*<div className='w-25 position-relative'>*/}
-                    {/*<CanvasPortrait image={image} test={test}/>*/}
-                {/*</div>*/}
-                <div className='overlay-line'/>
-                <SideBar></SideBar>
-                <ColorPicker></ColorPicker>
-                {/*<Player></Player>*/}
-                <Switch>
-                    <Route path="/movies" component={LandingPage}/>
-                    <Route path="/tv-shows" exact component={MoveDetailPage}/>
-                    <Route path="/auth" component={Auth}/>
-                    <Route path="/" exact component={LandingPage}/>
-                </Switch>
-            </div>
+            {/*<div className='w-25 position-relative'>*/}
+            {/*<CanvasPortrait image={image} test={test}/>*/}
+            {/*</div>*/}
+            <div className='overlay-line'/>
+            <SideBar></SideBar>
+            <ColorPicker></ColorPicker>
+            {/*<Player></Player>*/}
+            <Switch>
+                <Route path="/movies" component={LandingPage}/>
+                <Route path="/tv-shows" exact component={MoveDetailPage}/>
+                <Route path="/auth" component={Auth}/>
+                <Route path="/" exact component={LandingPage}/>
+            </Switch>
         </div>
     );
 }

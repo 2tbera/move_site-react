@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import SideBarItem from './side-bar-item/side-bar-item';
 import Logo from '../../logo/logo';
-import Img from '../../../../assets/images/1.jpg';
 import {connect} from 'react-redux';
 
 import * as actions from '../../../../store/actions/index';
@@ -87,36 +86,30 @@ class SideBar extends Component {
         }
 
         return (
-            <div className='br-right col-3 overflow-hidden'>
-                <div className="row h-100vh d-flex flex-column  justify-content-between">
-                    <div>
-                        <div className='mt-4 mb-4 br-bottom pt-2 pb-2'>
-                            <Logo/>
-                        </div>
+            <div className="position-absolute d-flex justify-content-between w-100">
+                <div className='p-5 m-4'>
+                    <Logo/>
+                </div>
 
-                        <div className='font-size-11 font-color-light-grey pl-5'>
-                            MEDIA
-                        </div>
 
-                        <ul className="w-100 list pb-5">
-                            {menu.map(item => (
-                                <SideBarItem key={item.key} link={item.link} exact> {item.title} </SideBarItem>
-                            ))}
-                        </ul>
 
-                        {userRouts}
+                <ul className="w-100 d-flex list p-5">
+                    {menu.map(item => (
+                        <SideBarItem key={item.key} link={item.link} exact> {item.title} </SideBarItem>
+                    ))}
+                </ul>
 
-                        <div className='w-100 mt-2 mb-2  '>
-                            <div className='br-bottom pt-2 pb-2'>
-                            </div>
-                        </div>
+                {userRouts}
+
+                <div className='w-100 mt-2 mb-2  '>
+                    <div className='br-bottom pt-2 pb-2'>
                     </div>
+                </div>
 
 
-                    <div className='p-5 font-color-white  font-Bold cursor-pointer'>
-                        {authButton}
+                <div className='p-5 font-color-white  font-Bold cursor-pointer'>
+                    {authButton}
 
-                    </div>
                 </div>
             </div>
         );

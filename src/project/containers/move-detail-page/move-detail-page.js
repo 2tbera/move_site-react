@@ -7,59 +7,67 @@ import axios from '../../../http-handlers/axios-music-handler';
 class MoveDetailPage extends Component {
 
     state = {
-        genres: null
+
     };
 
     componentDidMount() {
-        // axios.get('/search?&q="Paul Kalkbrenner"&index=1')
-        //     .then(e => {
-        //         console.log(e.data);
-        //         this.setState({
-        //             ...this.state,
-        //             aTracks: e.data
-        //         });
-        //     });
-
-        axios.get('/genre')
-            .then(e => {
-                console.log(e.data.data);
-                this.setState({
-                    ...this.state,
-                    genres: e.data
-                });
-            });
-        // window.onload = () => {
-        //     const canvas = document.getElementById("myCanvas");
-        //     const ctx = canvas.getContext("2d");
-        //     const img = document.getElementById("scream");
-        // console.log(canvas,ctx , '<---------------' ,img);
-        // ctx.drawImage(img, 10, 10);
-        // };
 
     }
+
+    tracksFetchHandler = (url) => {
+        axios.get('https://cors-anywhere.herokuapp.com/' + url)
+            .then(e => {
+                this.setState({
+                    ...this.state,
+                    artist: {
+                        ...this.state.artist,
+                        artistTracks: e.data
+                    }
+                });
+            });
+    };
 
 
     render() {
 
-        let move = null;
+        let artists = null;
 
-        if (this.state.genres) {
-            move = (
+        if (this.state.artist) {
+            artists = (
                 <div>
-                    {this.state.genres.data.map(genre =>
-                        (
-                            <div key={genre.id}>{genre.name}
-                                <img src={genre.picture_small} alt=""/>
-                            </div>
-                        ))}
+                    <div>
+                        {this.state.artist.name}
+                        <img src={this.state.artist['picture']} alt=""/>
+                        <button onClick={() => this.tracksFetchHandler(this.state.artist['tracklist'])}>
+                            track list
+                        </button>
+                    </div>
                 </div>
             )
         }
 
+        let artistsTraks = null;
+
+        if (this.state.artist && this.state.artist.artistTracks) {
+            artistsTraks = (
+                <div>
+                    {this.state.artist['artistTracks'].data.map(e =>
+                        <div key={e.id}>
+                            title: -> {e.title}
+                            <br/>
+                            <audio src={e['preview']} controls/>
+                        </div>
+                    )}
+                </div>
+            )
+        }
+
+
         return (
             <div className='col-10 p-5 ' style={{background: this.props.color}}>
 
-                {move}
+                {/*{artists}*/}
+                {/*{artistsTraks}*/}
             </div>
         );
     }
