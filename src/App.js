@@ -22,7 +22,7 @@ function App() {
             {/*<CanvasPortrait image={image} test={test}/>*/}
             {/*</div>*/}
             <div className='overlay-line'/>
-            <SideBar></SideBar>
+            {/*<SideBar></SideBar>*/}
             <ColorPicker></ColorPicker>
             {/*<Player></Player>*/}
             <Switch>

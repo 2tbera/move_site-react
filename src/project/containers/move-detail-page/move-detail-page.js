@@ -15,6 +15,7 @@ class MoveDetailPage extends Component {
     }
 
     tracksFetchHandler = (url) => {
+        console.log(url);
         axios.get('https://cors-anywhere.herokuapp.com/' + url)
             .then(e => {
                 this.setState({

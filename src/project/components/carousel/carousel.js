@@ -7,7 +7,7 @@ class Carousel extends Component {
     state = {
         seeker: null,
         rect: null,
-        value: 200,
+        value: 600,
         mouseDown: false
     };
 
@@ -17,7 +17,6 @@ class Carousel extends Component {
 
     begin = event => {
         const process = 'mousemove', end = 'mouseup';
-
         this.setState({
             ...this.state,
             rect: this.seeker.getBoundingClientRect(),
@@ -25,22 +24,14 @@ class Carousel extends Component {
             mouseDownX: event.clientX,
             mouseDown: true
         });
-
-
         this.seeker.addEventListener(process, this.process, true);
         this.seeker.addEventListener(end, this.end, true);
-
         this.process(event);
-
-
     };
 
-    process = (e) => {
+    process = (event) => {
         let change;
-        console.log(this.state.mouseDownX - e.clientX);
-        // if ( this.state.value > -2500 && this.state.value < 600 ) {
-        change = this.state.mouseDownX - e.clientX;
-        // }
+        change = this.state.mouseDownX - event.clientX;
         this.setState({
             ...this.state,
             value: this.state.prevValue + change * -1
@@ -53,7 +44,6 @@ class Carousel extends Component {
             prevValue: this.state.value,
             mouseDown: false
         });
-
         const process = 'mousemove', end = 'mouseup';
         this.seeker.removeEventListener(process, this.process, true);
         this.seeker.removeEventListener(end, this.end, true);
